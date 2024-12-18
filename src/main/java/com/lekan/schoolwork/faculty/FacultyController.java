@@ -23,7 +23,7 @@ public class FacultyController {
 
     @GetMapping("hello")
     public String hello(){
-        return "<h1>Hello version - 1<h1>";
+        return "<h1>Hello version - 2<h1>";
     }
     @GetMapping
     public ResponseEntity<List<Faculty>> findAll(){;
