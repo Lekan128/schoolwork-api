@@ -1,0 +1,1 @@
+ALTER TABLE review ALTER COLUMN review TYPE varchar (999);
