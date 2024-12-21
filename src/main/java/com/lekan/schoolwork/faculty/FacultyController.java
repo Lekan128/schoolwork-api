@@ -26,7 +26,7 @@ public class FacultyController {
         return "<h1>Hello version - 2<h1>";
     }
     @GetMapping
-    public ResponseEntity<List<Faculty>> findAll(){;
+    public ResponseEntity<List<FacultyView>> findAll(){;
         return ResponseEntity.ok(facultyService.find());
     }
 
