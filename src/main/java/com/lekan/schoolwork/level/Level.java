@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.UUID;
@@ -13,6 +14,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "level")
 @NoArgsConstructor
+@EqualsAndHashCode
 public class Level {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
