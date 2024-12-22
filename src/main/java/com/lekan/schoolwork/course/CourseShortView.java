@@ -9,8 +9,6 @@ import java.util.UUID;
 public interface CourseShortView {
     @IdMapping
     UUID getId();
-
     String getTitle();
-
     String getCode();
 }
