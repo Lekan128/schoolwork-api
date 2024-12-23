@@ -1,10 +1,8 @@
 package com.lekan.schoolwork.faculty;
 
-import jakarta.websocket.server.PathParam;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,10 +21,10 @@ public class FacultyController {
 
     @GetMapping("hello")
     public String hello(){
-        return "<h1>Hello version - 2<h1>";
+        return "<h1>Hello version - 3<h1>";
     }
     @GetMapping
-    public ResponseEntity<List<Faculty>> findAll(){;
+    public ResponseEntity<List<FacultyView>> findAll(){;
         return ResponseEntity.ok(facultyService.find());
     }
 
