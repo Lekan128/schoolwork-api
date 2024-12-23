@@ -90,11 +90,12 @@ public class CourseService {
 
     public Course update(UUID courseId, CourseDto dto){
         Course course = get(courseId);
-        Department department = departmentService.get(dto.departmentId);
-        Level level = levelService.getByName(dto.level);
-
-        course.department = department;
-        course.level = level;
+        //Add later if needed
+//        Department department = departmentService.get(dto.departmentId);
+//        Level level = levelService.getByName(dto.level);
+//
+//        course.department = department;
+//        course.level = level;
         course.title = dto.title;
         course.code = dto.code;
         course.semester = dto.semester;
