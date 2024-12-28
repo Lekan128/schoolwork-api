@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -24,5 +25,9 @@ public class LevelService {
 
     public Level getByName(String levelName) {
         return levelRepository.findByName(levelName).orElseThrow(() -> new EntityNotFoundException("level does not exist"));
+    }
+
+    public Level get(UUID levelId){
+        return levelRepository.findById(levelId).orElseThrow(()-> new EntityNotFoundException("level does not exist"));
     }
 }
