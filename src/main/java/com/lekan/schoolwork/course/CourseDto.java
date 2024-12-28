@@ -17,6 +17,6 @@ public class CourseDto {
     @NotNull
     public Course.Semester semester;
     @NotBlank
-    public String level;
+    public UUID levelId;
     public List<CourseMaterialDto> courseMaterials;
 }

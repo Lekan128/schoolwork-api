@@ -30,7 +30,7 @@ public class CourseService {
 
     public Course create(CourseDto dto){
         Department department = departmentService.get(dto.departmentId);
-        Level level = levelService.getByName(dto.level);
+        Level level = levelService.get(dto.levelId);
         Course course = Course.builder()
                 .department(department)
                 .title(dto.title)
